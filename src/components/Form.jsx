@@ -26,18 +26,18 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
         onChange={inputTextHandler}
         type="text"
         placeholder="Insert here your task..."
-        className="mr-0 todo-input p-2 text-3xl border-none text-black bg-white rounded-l-lg"
+        className="mr-0 todo-input p-2 lg:text-3xl border-none text-black bg-white rounded-l-lg"
       />
       <button
         onClick={submitTodoHandler}
-        className="add-todo p-2 text-4xl border-none bg-white cursor-pointer hover:bg-orange-200 mx-2 rounded-r-lg ml-0">
+        className="add-todo p-2 text-2xl lg:text-4xl border-none bg-white cursor-pointer hover:bg-orange-200 mx-2 rounded-r-lg ml-0">
         <FaPlusSquare color="rgb(251, 146, 60)" />
       </button>
       <div className="m-4 relative overflow-hidden">
         <select
           onChange={statusHandler}
           name="todos"
-          className="filter-todo p-4 rounded-lg appearance-none	outline-none shadow-none border-0 bg-none text-orange-400 cursor-pointer w-48">
+          className="filter-todo p-2 lg:p-4 rounded-lg appearance-none	outline-none shadow-none border-0 bg-none text-orange-400 cursor-pointer w-30 lg:w-40">
           <option value="all">All</option>
           <option value="completed">Completed</option>
           <option value="uncompleted">Uncompleted</option>
